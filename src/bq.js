@@ -27,8 +27,11 @@ function runQuery() {
         console.error('ERROR:', err);
     });
 
-    console.log(result);
-    return result;
+    setTimeout(function(){
+        //do what you need here
+        return result;
+    }, 10000);
+
 }
 
 module.exports = runQuery;

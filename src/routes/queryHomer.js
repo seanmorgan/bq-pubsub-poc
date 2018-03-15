@@ -3,9 +3,8 @@ var express = require('express');
     bq = require('../bq');
 
 router.get('/', function(req, res) {
-    let result = bq();
+    bq();
 
-    res.status(200).send(result);
 });
 
 module.exports = router;
